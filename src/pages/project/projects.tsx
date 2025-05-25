@@ -1,4 +1,3 @@
-//Imports
 import React from 'react'
 import Button from '@mui/material/Button'
 import './projects.css'
@@ -32,7 +31,7 @@ const Projects: React.FC = () => {
           </a>
         </Button>
       </section>
-      <h1 className="text">Projetos em Destaque</h1>
+      <h1 id="project" className="text">Projetos em Destaque</h1>
       <ProjectSlider />
     </section>
   )
