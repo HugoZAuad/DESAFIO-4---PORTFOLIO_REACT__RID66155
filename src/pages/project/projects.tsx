@@ -32,6 +32,7 @@ const Projects: React.FC = () => {
           </a>
         </Button>
       </section>
+      <h1 className='text'>Projetos em Destaque</h1>
       <ProjectSlider />
     </section>
   )

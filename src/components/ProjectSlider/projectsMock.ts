@@ -21,7 +21,7 @@ const projects = [
     id: 3,
     title: 'Lista de Tarefas',
     description:
-      'Aplicação web para gerenciamento eficiente de tarefas, permitindo adicionar, concluir e remover atividades com facilidade e organização para o dia a dia.',
+      'Aplicação web para gerenciamento eficiente de tarefas, permitindo adicionar, concluir e remover atividades com facilidade de organizar o seu dia',
     imagem: 'https://i.imgur.com/JqdUU8q.png',
     link: 'https://github.com/HugoZAuad/ToDo-Lista',
     siteLink: 'https://to-do-listas.vercel.app',

@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import ButtonTheme from '../../components/ButtonTheme/ButtonTheme'
+import ButtonTheme from '../../../components/ButtonTheme/ButtonTheme'
 
 /* global describe, beforeEach, test, expect */
 
