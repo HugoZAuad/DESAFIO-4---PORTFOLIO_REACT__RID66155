@@ -63,8 +63,12 @@ function ProjectSlider() {
       <Slider ref={sliderRef} {...settings}>
         {projects.map((project) => (
           <div key={project.id} className="project-card">
-            <h3 tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>{project.title}</h3>
-            <p tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>{project.description}</p>
+            <h3 tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>
+              {project.title}
+            </h3>
+            <p tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>
+              {project.description}
+            </p>
             {project.imagem && (
               <img
                 src={project.imagem}
@@ -81,8 +85,26 @@ function ProjectSlider() {
               />
             )}
             <div className="project-links">
-              <a href={project.link} target='_blank' rel="noopener noreferrer" tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>Repositorio</a>
-              <a href={project.siteLink} target='_blank' rel="noopener noreferrer" tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>Deploy</a>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                tabIndex={0}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              >
+                Repositorio
+              </a>
+              <a
+                href={project.siteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                tabIndex={0}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              >
+                Deploy
+              </a>
             </div>
           </div>
         ))}

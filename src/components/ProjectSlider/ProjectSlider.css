@@ -74,7 +74,6 @@
 .slick-prev:hover,
 .slick-next:hover {
   height: 1rem;
-
 }
 
 .slick-prev:before,
@@ -91,4 +90,3 @@
 .slick-list {
   margin: 0 -5px;
 }
-
