@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import Navbar from '../../components/navbar/navbar'
+import Navbar from '../../../components/navbar/navbar'
 
 /* global describe, beforeEach, test, expect */
 

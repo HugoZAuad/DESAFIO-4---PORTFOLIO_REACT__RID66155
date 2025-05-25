@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import ProjectSlider from '../../components/ProjectSlider/ProjectSlider'
+import ProjectSlider from '../../../components/ProjectSlider/ProjectSlider'
 
 // Mock completo dos projetos para o teste
 const projects = [
