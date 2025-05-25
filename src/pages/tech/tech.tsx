@@ -1,6 +1,12 @@
 import React from 'react'
 import ButtonTech from '../../components/ButtonTech/ButtonTech'
-import { faReact, faJs, faNodeJs, faCss3Alt, faHtml5 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faReact,
+  faJs,
+  faNodeJs,
+  faCss3Alt,
+  faHtml5,
+} from '@fortawesome/free-brands-svg-icons'
 import './tech.css'
 
 const techs = [
@@ -22,7 +28,7 @@ const techs = [
     level: 'Intermediário',
     icon: faJs,
   },
-    {
+  {
     name: 'React',
     description: 'Biblioteca JavaScript para construir interfaces',
     level: 'Intermediário',

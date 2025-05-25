@@ -17,9 +17,9 @@
   height: 100%;
 }
 
-.project-card:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    cursor: pointer;
+.project-card:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  cursor: pointer;
 }
 
 .project-card img {

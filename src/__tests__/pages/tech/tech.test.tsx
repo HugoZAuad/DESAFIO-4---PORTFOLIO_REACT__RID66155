@@ -5,8 +5,14 @@ import Tech from '../../../pages/tech/tech'
 describe('Tech Page', () => {
   test('renders all tech cards', () => {
     render(<Tech />)
-    const techNames = ['React', 'JavaScript/TypeScript', 'Node.js', 'CSS', 'HTML']
-    techNames.forEach(name => {
+    const techNames = [
+      'React',
+      'JavaScript/TypeScript',
+      'Node.js',
+      'CSS',
+      'HTML',
+    ]
+    techNames.forEach((name) => {
       expect(screen.getByText(name)).toBeInTheDocument()
     })
   })
