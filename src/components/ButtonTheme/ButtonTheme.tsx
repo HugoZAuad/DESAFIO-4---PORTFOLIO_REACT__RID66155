@@ -1,5 +1,8 @@
+//Imports
 import React, { useState, useEffect } from 'react'
 import { Button } from '@mui/material'
+
+//Import Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
