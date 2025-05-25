@@ -19,7 +19,7 @@ const techs = [
   {
     name: 'CSS',
     description: 'Folhas de estilo para estilização de páginas web',
-    level: 'Intermediário',
+    level: 'Avançado',
     icon: faCss3Alt,
   },
   {
@@ -37,7 +37,7 @@ const techs = [
   {
     name: 'Node.js',
     description: 'Ambiente de execução JavaScript no servidor',
-    level: 'Avançado',
+    level: 'Basico',
     icon: faNodeJs,
   },
 ]
