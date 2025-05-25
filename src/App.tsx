@@ -1,12 +1,12 @@
 import React from 'react'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import Navbar from './components/navbar/navbar'
+import Projects from './pages/project/projects'
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Projects />
     </div>
   )
 }

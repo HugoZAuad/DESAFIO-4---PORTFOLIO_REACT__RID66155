@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from '@mui/material/Button'
-import './navbar.css'
 import ButtonTheme from '../ButtonTheme/ButtonTheme'
+import './navbar.css'
+
+//Import Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -10,17 +12,17 @@ const Navbar: React.FC = () => {
     <nav className="nav-all" role="navigation" aria-label="Main navigation">
       <ul className="navbar">
         <li>
-          <a aria-label="Projetos" href="/src/pages/project">
+          <a aria-label="Projetos" href="#project">
             Projetos
           </a>
         </li>
         <li>
-          <a aria-label="Tecnologias" href="/src/pages/tech">
+          <a aria-label="Tecnologias" href="#tech">
             Tecnologias
           </a>
         </li>
         <li>
-          <a aria-label="Sobre mim" href="/src/pages/about">
+          <a aria-label="Sobre mim" href="#about">
             Sobre Mim
           </a>
         </li>
