@@ -1,5 +1,5 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from 'react'
+import Slider from 'react-slick'
 
 function ProjectSlider() {
   const settings = {
@@ -10,13 +10,13 @@ function ProjectSlider() {
     slidesToScroll: 1, // Número de itens que avançam a cada clique
     autoplay: true, // Ativa rotação automática
     autoplaySpeed: 5000, // Tempo entre cada slide
-  };
+  }
 
   const projects = [
     { id: 1, title: 'Projeto 1', description: 'Descrição do Projeto 1' },
     { id: 2, title: 'Projeto 2', description: 'Descrição do Projeto 2' },
     { id: 3, title: 'Projeto 3', description: 'Descrição do Projeto 3' },
-  ];
+  ]
 
   return (
     <Slider {...settings}>
@@ -27,7 +27,7 @@ function ProjectSlider() {
         </div>
       ))}
     </Slider>
-  );
+  )
 }
 
-export default ProjectSlider;
+export default ProjectSlider

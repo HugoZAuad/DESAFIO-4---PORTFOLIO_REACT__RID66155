@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import Button from '@mui/material/Button'
+import { Button } from '@mui/material'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
-const ButtonTheme = () => {
+const ButtonTheme: React.FC = () => {
   const [theme, setTheme] = useState(() => {
     return document.documentElement.getAttribute('data-theme') === 'dark'
       ? 'dark'
@@ -21,7 +23,12 @@ const ButtonTheme = () => {
   }
 
   return (
-    <Button onClick={toggleTheme}>{theme === 'dark' ? 'Light' : 'Dark'}</Button>
+    <Button onClick={toggleTheme} aria-label="Toggle dark mode">
+      <FontAwesomeIcon
+        icon={theme === 'dark' ? faSun : faMoon}
+        style={{ padding: 8, background: 'transparent', minHeight: 20 }}
+      />
+    </Button>
   )
 }
 
