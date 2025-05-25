@@ -6,6 +6,8 @@ describe('About page', () => {
   test('renders About page title and timeline', () => {
     render(<About />)
     expect(screen.getByText(/Sobre Mim/i)).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Sobre Mim/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /Sobre Mim/i }),
+    ).toBeInTheDocument()
   })
 })

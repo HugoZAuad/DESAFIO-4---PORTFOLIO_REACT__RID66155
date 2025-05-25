@@ -7,7 +7,11 @@ const ScrollToTopButton: React.FC = () => {
   }
 
   return (
-    <button className="scroll-to-top" onClick={scrollToTop} aria-label="Voltar ao topo">
+    <button
+      className="scroll-to-top"
+      onClick={scrollToTop}
+      aria-label="Voltar ao topo"
+    >
       ↑
     </button>
   )
