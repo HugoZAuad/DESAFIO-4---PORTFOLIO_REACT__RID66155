@@ -12,17 +12,47 @@ const Navbar: React.FC = () => {
     <nav className="nav-all" role="navigation" aria-label="Main navigation">
       <ul className="navbar">
         <li>
-          <a aria-label="Projetos" href="#project">
+          <a
+            aria-label="Projetos"
+            href="#project"
+            onClick={(e) => {
+              e.preventDefault()
+              const el = document.getElementById('project')
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
+          >
             Projetos
           </a>
         </li>
         <li>
-          <a aria-label="Tecnologias" href="#tech">
+          <a
+            aria-label="Tecnologias"
+            href="#tech"
+            onClick={(e) => {
+              e.preventDefault()
+              const el = document.getElementById('tech')
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
+          >
             Tecnologias
           </a>
         </li>
         <li>
-          <a aria-label="Sobre mim" href="#about">
+          <a
+            aria-label="Sobre mim"
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault()
+              const el = document.getElementById('about')
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
+          >
             Sobre Mim
           </a>
         </li>

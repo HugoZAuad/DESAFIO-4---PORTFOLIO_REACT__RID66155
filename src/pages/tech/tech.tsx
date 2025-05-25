@@ -44,7 +44,7 @@ const techs = [
 
 const Tech: React.FC = () => {
   return (
-    <section className="tech-section">
+    <section id="tech" className="tech-section">
       {techs.map((tech) => (
         <div key={tech.name} className="tech-item">
           <span className="tech-icon">
