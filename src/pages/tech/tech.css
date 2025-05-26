@@ -11,6 +11,12 @@
   text-align: center;
 }
 
+.text-tech {
+  margin-left: 4.7rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
 .tech-item {
   margin-bottom: 20px;
   display: flex;

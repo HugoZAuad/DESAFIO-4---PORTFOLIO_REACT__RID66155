@@ -37,12 +37,9 @@ a {
   flex-direction: row;
   align-items: center;
   margin-left: auto;
-  gap: 1rem;
+  background: none;
 }
 
-/* Responsividade */
-
-/* Telas pequenas - mobile */
 @media (max-width: 480px) {
   .nav-all {
     flex-direction: column;
@@ -68,7 +65,6 @@ a {
   }
 }
 
-/* Telas médias - tablets */
 @media (min-width: 481px) and (max-width: 1024px) {
   .nav-all {
     padding: 0.5rem 2rem;
@@ -84,7 +80,6 @@ a {
   }
 }
 
-/* Telas grandes - desktops */
 @media (min-width: 1025px) and (max-width: 2560px) {
   .nav-all {
     padding: 0.5rem 4rem;

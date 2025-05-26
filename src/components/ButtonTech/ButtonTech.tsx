@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './ButtonTech.css'
+import { useTranslation } from 'react-i18next'
 
 interface ButtonTechProps {
   name: string
@@ -15,6 +16,7 @@ const ButtonTech: React.FC<ButtonTechProps> = ({
   level,
   icon,
 }) => {
+  const { t } = useTranslation()
   const [cardInfo, setCardInfo] = useState({
     name: '',
     description: '',
@@ -32,12 +34,12 @@ const ButtonTech: React.FC<ButtonTechProps> = ({
   return (
     <div className={`button-tech-card ${fadeIn ? 'fade-in' : ''}`}>
       {icon && <FontAwesomeIcon icon={icon} size="2x" className="card-icon" />}
-      <h3 className="card-name">{cardInfo.name}</h3>
+      <h3 className="card-name">{t(cardInfo.name)}</h3>
       <p className="card-description">
-        <strong>Descrição:</strong> {cardInfo.description}
+        <strong>{t('description')}:</strong> {t(cardInfo.description)}
       </p>
       <p className="card-level">
-        <strong>Nível:</strong> {cardInfo.level}
+        <strong>{t('level')}:</strong> {t(cardInfo.level)}
       </p>
     </div>
   )

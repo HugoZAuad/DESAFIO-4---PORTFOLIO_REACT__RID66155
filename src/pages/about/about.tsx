@@ -8,48 +8,50 @@ import Timeline from '../../components/Timeline/Timeline'
 const timelineEvents = [
   {
     date: '2019',
-    title: 'Trabalho Presencial',
-    description: 'Iniciado nova jornada na área administrativa.',
+    title: 'timeline.event1.title',
+    description: 'timeline.event1.description',
   },
   {
     date: '2021',
-    title: 'Mudança de empresa',
-    description: 'Iniciado uma nova fase em busca de desafios,',
+    title: 'timeline.event2.title',
+    description: 'timeline.event2.description',
   },
   {
     date: '2022',
-    title: 'Novo trabalho',
-    description: 'Fui contratado como auxiliar de logistica.',
+    title: 'timeline.event3.title',
+    description: 'timeline.event3.description',
   },
   {
     date: '2023',
-    title: 'Especialização',
-    description:
-      'Realizei cursos profissionalizantes para Desenvolvimento Web - Full Stack.',
+    title: 'timeline.event4.title',
+    description: 'timeline.event4.description',
   },
   {
     date: '2024',
-    title: 'Novo Desafio',
-    description:
-      'Iniciado novo desafio na área tecnologica voltada a saúde publica.',
+    title: 'timeline.event5.title',
+    description: 'timeline.event5.description',
   },
   {
     date: '2025',
-    title: 'Iniciado Nova Formação Academica',
-    description: 'Iniciado nova formação academica em Ciências da Computação.',
+    title: 'timeline.event6.title',
+    description: 'timeline.event6.description',
   },
   {
     date: '08/2025',
-    title: 'Finalizado Curso Profissionalizante',
-    description: 'Previsão para finalizar o curso profissionalizante',
+    title: 'timeline.event7.title',
+    description: 'timeline.event7.description',
   },
 ]
 
+import { useTranslation } from 'react-i18next'
+
 const About = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section id="about" className="title">
-        <h1 className="about">Sobre Mim</h1>
+        <h1 className="about">{t('about')}</h1>
         <div className="flex-row">
           <Timeline events={timelineEvents} />
         </div>

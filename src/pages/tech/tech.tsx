@@ -8,56 +8,62 @@ import {
   faHtml5,
 } from '@fortawesome/free-brands-svg-icons'
 import './tech.css'
+import { useTranslation } from 'react-i18next'
 
 const techs = [
   {
-    name: 'HTML',
-    description: 'Linguagem de marcação para estruturar conteúdo na web',
-    level: 'Avançado',
+    name: 'tech.html.name',
+    description: 'tech.html.description',
+    level: 'tech.html.level',
     icon: faHtml5,
   },
   {
-    name: 'CSS',
-    description: 'Folhas de estilo para estilização de páginas web',
-    level: 'Avançado',
+    name: 'tech.css.name',
+    description: 'tech.css.description',
+    level: 'tech.css.level',
     icon: faCss3Alt,
   },
   {
-    name: 'JavaScript/TypeScript',
-    description: 'Superset do JavaScript que adiciona tipagem estática',
-    level: 'Intermediário',
+    name: 'tech.javascript_typescript.name',
+    description: 'tech.javascript_typescript.description',
+    level: 'tech.javascript_typescript.level',
     icon: faJs,
   },
   {
-    name: 'React',
-    description: 'Biblioteca JavaScript para construir interfaces',
-    level: 'Intermediário',
+    name: 'tech.react.name',
+    description: 'tech.react.description',
+    level: 'tech.react.level',
     icon: faReact,
   },
   {
-    name: 'Node.js',
-    description: 'Ambiente de execução JavaScript no servidor',
-    level: 'Basico',
+    name: 'tech.nodejs.name',
+    description: 'tech.nodejs.description',
+    level: 'tech.nodejs.level',
     icon: faNodeJs,
   },
 ]
 
 const Tech: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
-    <section id="tech" className="tech-section">
-      {techs.map((tech) => (
-        <div key={tech.name} className="tech-item">
-          <span className="tech-icon">
-            <ButtonTech
-              name={tech.name}
-              description={tech.description}
-              level={tech.level}
-              icon={tech.icon}
-            />
-          </span>
-        </div>
-      ))}
-    </section>
+    <>
+      <h1 className='text-tech'>{t('technologies')}</h1>
+      <section id="tech" className="tech-section">
+        {techs.map((tech) => (
+          <div key={tech.name} className="tech-item">
+            <span className="tech-icon">
+              <ButtonTech
+                name={tech.name}
+                description={tech.description}
+                level={tech.level}
+                icon={tech.icon}
+              />
+            </span>
+          </div>
+        ))}
+      </section>
+    </>
   )
 }
 

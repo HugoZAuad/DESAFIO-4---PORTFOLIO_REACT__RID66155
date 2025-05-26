@@ -38,13 +38,16 @@
 .timeline-title {
   margin: 0;
   font-size: 1.2em;
+  color: #333;
   text-align: center;
 }
 
 .timeline-description {
   margin: 5px 0 0 0;
+  color: #555;
   text-align: center;
 }
+
 
 @media (max-width: 768px) {
   .about {

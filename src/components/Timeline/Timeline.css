@@ -18,9 +18,10 @@
 .timeline-title {
   margin: 0;
   font-size: 1.2em;
+  color: #333;
 }
 
 .timeline-description {
   margin: 5px 0 0 0;
-  color: #007bff;
+  color: #555;
 }
