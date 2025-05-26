@@ -2,12 +2,15 @@ import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>hugozeymer@gmail.com</p>
+        <p>{t('contact')}: hugozeymer@gmail.com</p>
         <div className="footer-links">
           <a
             href="https://github.com/HugoZAuad"

@@ -2,8 +2,10 @@ import React, { useRef, FocusEvent } from 'react'
 import Slider from 'react-slick'
 import projects from './projectsMock'
 import './ProjectSlider.css'
+import { useTranslation } from 'react-i18next'
 
 function ProjectSlider() {
+  const { t } = useTranslation()
   const sliderRef = useRef(null)
 
   const handleFocus = (e: FocusEvent<HTMLElement>) => {
@@ -64,15 +66,15 @@ function ProjectSlider() {
         {projects.map((project) => (
           <div key={project.id} className="project-card">
             <h3 tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>
-              {project.title}
+              {t(project.title)}
             </h3>
             <p tabIndex={0} onFocus={handleFocus} onBlur={handleBlur}>
-              {project.description}
+              {t(project.description)}
             </p>
             {project.imagem && (
               <img
                 src={project.imagem}
-                alt={project.title}
+                alt={t(project.title)}
                 style={{
                   maxWidth: '100%',
                   height: 'auto',
@@ -93,7 +95,7 @@ function ProjectSlider() {
                 onFocus={handleFocus}
                 onBlur={handleBlur}
               >
-                Repositorio
+                {t('repository')}
               </a>
               <a
                 href={project.siteLink}
@@ -103,7 +105,7 @@ function ProjectSlider() {
                 onFocus={handleFocus}
                 onBlur={handleBlur}
               >
-                Deploy
+                {t('deploy')}
               </a>
             </div>
           </div>

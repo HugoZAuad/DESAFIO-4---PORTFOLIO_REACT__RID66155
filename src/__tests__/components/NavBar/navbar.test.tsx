@@ -2,12 +2,18 @@ import '@testing-library/jest-dom'
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Navbar from '../../../components/navbar/navbar'
+import { I18nextProvider } from 'react-i18next'
+import i18n from '../../../i18n'
 
 /* global describe, beforeEach, test, expect */
 
 describe('Navbar component', () => {
   beforeEach(() => {
-    render(<Navbar />)
+    render(
+      <I18nextProvider i18n={i18n}>
+        <Navbar />
+      </I18nextProvider>,
+    )
   })
 
   test('renders navigation links', () => {

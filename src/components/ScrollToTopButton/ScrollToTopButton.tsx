@@ -1,7 +1,9 @@
 import React from 'react'
 import './ScrollToTopButton.css'
+import { useTranslation } from 'react-i18next'
 
 const ScrollToTopButton: React.FC = () => {
+  const { t } = useTranslation()
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -10,7 +12,7 @@ const ScrollToTopButton: React.FC = () => {
     <button
       className="scroll-to-top"
       onClick={scrollToTop}
-      aria-label="Voltar ao topo"
+      aria-label={t('scroll_to_top')}
     >
       ↑
     </button>

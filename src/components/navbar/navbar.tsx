@@ -2,18 +2,22 @@ import React from 'react'
 import Button from '@mui/material/Button'
 import ButtonTheme from '../ButtonTheme/ButtonTheme'
 import './navbar.css'
+import LanguageToggleButton from '../LanguageToggleButton/LanguageToggleButton'
+import { useTranslation } from 'react-i18next'
 
 //Import Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Navbar: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <nav className="nav-all" role="navigation" aria-label="Main navigation">
       <ul className="navbar">
         <li>
           <a
-            aria-label="Projetos"
+            aria-label={t('projects')}
             href="#project"
             onClick={(e) => {
               e.preventDefault()
@@ -23,12 +27,12 @@ const Navbar: React.FC = () => {
               }
             }}
           >
-            Projetos
+            {t('projects')}
           </a>
         </li>
         <li>
           <a
-            aria-label="Tecnologias"
+            aria-label={t('technologies')}
             href="#tech"
             onClick={(e) => {
               e.preventDefault()
@@ -38,12 +42,12 @@ const Navbar: React.FC = () => {
               }
             }}
           >
-            Tecnologias
+            {t('technologies')}
           </a>
         </li>
         <li>
           <a
-            aria-label="Sobre mim"
+            aria-label={t('about')}
             href="#about"
             onClick={(e) => {
               e.preventDefault()
@@ -53,13 +57,12 @@ const Navbar: React.FC = () => {
               }
             }}
           >
-            Sobre Mim
+            {t('about')}
           </a>
         </li>
       </ul>
 
       <div className="buttons" role="region" aria-label="Redes sociais e tema">
-        <ButtonTheme />
         <a
           href="https://github.com/HugoZAuad"
           target="_blank"
@@ -87,6 +90,8 @@ const Navbar: React.FC = () => {
           </Button>
         </a>
       </div>
+      <ButtonTheme />
+      <LanguageToggleButton />
     </nav>
   )
 }
