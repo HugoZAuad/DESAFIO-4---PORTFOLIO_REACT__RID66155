@@ -1,5 +1,5 @@
 .button-tech-card {
-  background-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px 20px;
@@ -26,5 +26,4 @@
 .card-level {
   margin: 6px 0;
   font-size: 1rem;
-  color: #333;
 }
