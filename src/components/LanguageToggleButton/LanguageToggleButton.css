@@ -11,11 +11,11 @@
   z-index: 9999;
   white-space: nowrap;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 480px) {
- .alert {
+  .alert {
     position: relative;
     top: 1rem;
     left: 0%;

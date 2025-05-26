@@ -37,7 +37,10 @@ const LanguageToggleButton: React.FC = () => {
 
   return (
     <>
-      <div className='lang' style={{ display: 'flex', gap: '1rem', cursor: 'pointer' }}>
+      <div
+        className="lang"
+        style={{ display: 'flex', gap: '1rem', cursor: 'pointer' }}
+      >
         <img
           src="https://flagcdn.com/w20/br.png"
           alt="Português Brasil"
@@ -55,10 +58,7 @@ const LanguageToggleButton: React.FC = () => {
         />
       </div>
       {alertVisible && (
-        <div
-          className='alert'
-          role="alert"
-        >
+        <div className="alert" role="alert">
           {t('languageChanging')}
         </div>
       )}

@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
           </button>
         </a>
       </div>
-      
+
       <div className="buttons-utils">
         <ButtonTheme />
         <LanguageToggleButton />

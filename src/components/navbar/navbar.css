@@ -56,13 +56,12 @@ a {
   color: #005cbe;
 }
 
-.buttons-utils{
+.buttons-utils {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
-
 
 @media (max-width: 480px) {
   .nav-all {
