@@ -23,7 +23,11 @@ const Projects: React.FC = () => {
           {t('projects_intro_part2')}
         </p>
         <Button style={{ fontSize: 15, fontWeight: 'bold' }}>
-          <a href="https://www.linkedin.com/in/hugozauad/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/hugozauad/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {t('learn_more')}
           </a>
         </Button>

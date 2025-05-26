@@ -9,7 +9,7 @@ describe('Projects Page', () => {
     render(
       <I18nextProvider i18n={i18n}>
         <Projects />
-      </I18nextProvider>
+      </I18nextProvider>,
     )
     expect(screen.getByText(/Oi, meu nome é/i)).toBeInTheDocument()
     expect(screen.getByText(/Desenvolvedor Full Stack/i)).toBeInTheDocument()

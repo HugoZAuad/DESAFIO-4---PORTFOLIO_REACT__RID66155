@@ -12,7 +12,7 @@ describe('Navbar component', () => {
     render(
       <I18nextProvider i18n={i18n}>
         <Navbar />
-      </I18nextProvider>
+      </I18nextProvider>,
     )
   })
 

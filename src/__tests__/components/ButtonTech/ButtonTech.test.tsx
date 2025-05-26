@@ -17,15 +17,19 @@ describe('ButtonTech Component', () => {
     render(
       <I18nextProvider i18n={i18n}>
         <ButtonTech {...props} />
-      </I18nextProvider>
+      </I18nextProvider>,
     )
   })
 
   test('renders name, description and level', () => {
     expect(screen.getByText(i18n.t(props.name))).toBeInTheDocument()
-    expect(screen.getByText(new RegExp(i18n.t('description') + ':'))).toBeInTheDocument()
+    expect(
+      screen.getByText(new RegExp(i18n.t('description') + ':')),
+    ).toBeInTheDocument()
     expect(screen.getByText(i18n.t(props.description))).toBeInTheDocument()
-    expect(screen.getByText(new RegExp(i18n.t('level') + ':'))).toBeInTheDocument()
+    expect(
+      screen.getByText(new RegExp(i18n.t('level') + ':')),
+    ).toBeInTheDocument()
     expect(screen.getByText(i18n.t(props.level))).toBeInTheDocument()
   })
 

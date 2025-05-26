@@ -48,7 +48,7 @@ const Tech: React.FC = () => {
 
   return (
     <>
-      <h1 className='text-tech'>{t('technologies')}</h1>
+      <h1 className="text-tech">{t('technologies')}</h1>
       <section id="tech" className="tech-section">
         {techs.map((tech) => (
           <div key={tech.name} className="tech-item">

@@ -10,9 +10,11 @@ describe('Footer component', () => {
     render(
       <I18nextProvider i18n={i18n}>
         <Footer />
-      </I18nextProvider>
+      </I18nextProvider>,
     )
-    expect(screen.getByText(/Contato: hugozeymer@gmail.com/i)).toBeInTheDocument()
+    expect(
+      screen.getByText(/Contato: hugozeymer@gmail.com/i),
+    ).toBeInTheDocument()
     expect(screen.getByLabelText(/GitHub/i)).toBeInTheDocument()
     expect(screen.getByLabelText(/LinkedIn/i)).toBeInTheDocument()
   })

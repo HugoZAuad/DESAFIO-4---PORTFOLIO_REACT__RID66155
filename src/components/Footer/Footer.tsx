@@ -12,10 +12,20 @@ const Footer = () => {
       <div className="footer-content">
         <p>{t('contact')}: hugozeymer@gmail.com</p>
         <div className="footer-links">
-          <a href="https://github.com/HugoZAuad" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a
+            href="https://github.com/HugoZAuad"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
-          <a href="https://linkedin.com/in/hugozauad" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a
+            href="https://linkedin.com/in/hugozauad"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
         </div>

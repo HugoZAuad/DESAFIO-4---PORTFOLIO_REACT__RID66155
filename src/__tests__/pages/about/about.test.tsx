@@ -9,9 +9,11 @@ describe('About page', () => {
     render(
       <I18nextProvider i18n={i18n}>
         <About />
-      </I18nextProvider>
+      </I18nextProvider>,
     )
     expect(screen.getByText(/Sobre Mim/i)).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Sobre Mim/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /Sobre Mim/i }),
+    ).toBeInTheDocument()
   })
 })

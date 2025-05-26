@@ -10,7 +10,7 @@ describe('LanguageToggleButton', () => {
     render(
       <I18nextProvider i18n={i18n}>
         <LanguageToggleButton />
-      </I18nextProvider>
+      </I18nextProvider>,
     )
   })
 
@@ -22,12 +22,14 @@ describe('LanguageToggleButton', () => {
   })
 
   test('changes language to Portuguese when clicking Brazilian flag', async () => {
-    const changeLanguageMock = jest.spyOn(i18n, 'changeLanguage').mockImplementation((lng?: string, callback?: any) => {
-      i18n.language = lng || 'pt'
-      i18n.emit('languageChanged', lng)
-      if (callback) callback(null, i18n.t)
-      return Promise.resolve(i18n.t)
-    })
+    const changeLanguageMock = jest
+      .spyOn(i18n, 'changeLanguage')
+      .mockImplementation((lng?: string, callback?: any) => {
+        i18n.language = lng || 'pt'
+        i18n.emit('languageChanged', lng)
+        if (callback) callback(null, i18n.t)
+        return Promise.resolve(i18n.t)
+      })
 
     const brFlag = screen.getByAltText('Português Brasil')
     await act(async () => {
@@ -39,12 +41,14 @@ describe('LanguageToggleButton', () => {
   })
 
   test('changes language to English when clicking US flag', async () => {
-    const changeLanguageMock = jest.spyOn(i18n, 'changeLanguage').mockImplementation((lng?: string, callback?: any) => {
-      i18n.language = lng || 'en'
-      i18n.emit('languageChanged', lng)
-      if (callback) callback(null, i18n.t)
-      return Promise.resolve(i18n.t)
-    })
+    const changeLanguageMock = jest
+      .spyOn(i18n, 'changeLanguage')
+      .mockImplementation((lng?: string, callback?: any) => {
+        i18n.language = lng || 'en'
+        i18n.emit('languageChanged', lng)
+        if (callback) callback(null, i18n.t)
+        return Promise.resolve(i18n.t)
+      })
 
     const usFlag = screen.getByAltText('English')
     await act(async () => {
