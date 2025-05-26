@@ -41,7 +41,10 @@ const LanguageToggleButton: React.FC = () => {
           src="https://flagcdn.com/w20/br.png"
           alt="Português Brasil"
           onClick={() => changeLanguage('pt')}
-          style={{ marginLeft: '1rem', border: language === 'pt' ? '2px solid #ccc' : 'none' }}
+          style={{
+            marginLeft: '1rem',
+            border: language === 'pt' ? '2px solid #ccc' : 'none',
+          }}
         />
         <img
           src="https://flagcdn.com/w20/us.png"
