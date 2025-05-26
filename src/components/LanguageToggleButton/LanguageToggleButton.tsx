@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import './LanguageToggleButton.css'
 
 const LanguageToggleButton: React.FC = () => {
   const { i18n, t } = useTranslation()
@@ -36,7 +37,7 @@ const LanguageToggleButton: React.FC = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', gap: '1rem', cursor: 'pointer' }}>
+      <div className='lang' style={{ display: 'flex', gap: '1rem', cursor: 'pointer' }}>
         <img
           src="https://flagcdn.com/w20/br.png"
           alt="Português Brasil"
@@ -55,22 +56,8 @@ const LanguageToggleButton: React.FC = () => {
       </div>
       {alertVisible && (
         <div
+          className='alert'
           role="alert"
-          style={{
-            position: 'fixed',
-            top: '4rem',
-            left: '92%',
-            transform: 'translateX(-50%)',
-            backgroundColor: '#333',
-            color: '#fff',
-            padding: '8px 12px',
-            borderRadius: '4px',
-            fontSize: '0.9rem',
-            zIndex: 9999,
-            whiteSpace: 'nowrap',
-            textAlign: 'center',
-            boxShadow: '0 2px 6px rgba(0,0,0,0.3)',
-          }}
         >
           {t('languageChanging')}
         </div>

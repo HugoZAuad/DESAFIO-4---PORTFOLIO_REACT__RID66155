@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '@mui/material/Button'
 import ButtonTheme from '../ButtonTheme/ButtonTheme'
 import './navbar.css'
 import LanguageToggleButton from '../LanguageToggleButton/LanguageToggleButton'
@@ -69,12 +68,9 @@ const Navbar: React.FC = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <Button color="primary" aria-label="GitHub">
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ padding: 8, color: 'gray', minHeight: 20 }}
-            />
-          </Button>
+          <button aria-label="GitHub">
+            <FontAwesomeIcon icon={faGithub} />
+          </button>
         </a>
         <a
           href="https://www.linkedin.com/in/hugozauad/"
@@ -82,16 +78,16 @@ const Navbar: React.FC = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <Button color="primary" aria-label="LinkedIn">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              style={{ padding: 8, minHeight: 20 }}
-            />
-          </Button>
+          <button aria-label="LinkedIn">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </button>
         </a>
       </div>
-      <ButtonTheme />
-      <LanguageToggleButton />
+      
+      <div className="buttons-utils">
+        <ButtonTheme />
+        <LanguageToggleButton />
+      </div>
     </nav>
   )
 }
