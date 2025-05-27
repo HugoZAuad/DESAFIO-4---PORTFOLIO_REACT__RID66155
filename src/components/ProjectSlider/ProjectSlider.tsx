@@ -26,7 +26,7 @@ function ProjectSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
     focusOnSelect: true,

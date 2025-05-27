@@ -11,13 +11,7 @@ describe('Tech Page', () => {
         <Tech />
       </I18nextProvider>,
     )
-    const techNames = [
-      'React',
-      'JavaScript/TypeScript',
-      'Node.js',
-      'CSS',
-      'HTML',
-    ]
+    const techNames = ['React', 'TypeScript', 'Node.js', 'CSS', 'HTML']
     techNames.forEach((name) => {
       const elements = screen.getAllByText((content, element) => {
         return !!element?.textContent?.includes(name)

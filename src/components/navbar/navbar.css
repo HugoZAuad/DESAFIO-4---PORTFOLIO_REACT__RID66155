@@ -33,11 +33,34 @@ a {
 }
 
 .buttons {
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: auto;
   background: none;
+  gap: 1rem;
+}
+
+.buttons button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.buttons button:hover {
+  color: #005cbe;
+}
+
+.buttons-utils {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @media (max-width: 480px) {
@@ -54,14 +77,24 @@ a {
   }
 
   .navbar li {
-    margin: 0 0.5rem;
+    margin: 0 0.5rem 0.5rem 0.5rem;
   }
 
   .buttons {
-    margin-left: 0;
+    order: 0;
     width: 100%;
-    justify-content: space-around;
-    margin-top: 0.5rem;
+    justify-content: flex-end;
+    gap: 0.3rem;
+    margin-left: 1rem;
+  }
+
+  .buttons-utils {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
   }
 }
 
