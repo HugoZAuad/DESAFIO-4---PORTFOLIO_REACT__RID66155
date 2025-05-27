@@ -56,35 +56,35 @@ const resources = {
         },
       },
       project: {
-        contador_regressivo: {
-          title: 'Contador Regressivo',
+        salesdashboard: {
+          title: 'Sales Dashboard',
           description:
-            'Aplicação web que exibe uma contagem regressiva dinâmica até uma data específica, ideal para eventos e lançamentos, com interface responsiva e intuitiva.',
+            'O DNC Sales Dashboard é uma aplicação web desenvolvida em React com TypeScript, que oferece um painel completo para gerenciamento e visualização de dados de vendas. A aplicação possui autenticação, rotas protegidas, gráficos interativos, e integração com APIs.',
         },
         controle_de_produtos: {
           title: 'Controle de Produtos',
           description:
             'Gerenciador simples de produtos que permite adicionar, visualizar e remover itens, facilitando o controle de estoque com interface amigável e simples.',
         },
-        lista_de_tarefas: {
-          title: 'Lista de Tarefas',
+        desafio1: {
+          title: 'LandPage Arquitetura',
           description:
-            'Aplicação web para gerenciamento eficiente de tarefas, permitindo adicionar, concluir e remover atividades com facilidade de organizar o seu dia.',
+            'Este projeto apresenta um website estático para uma empresa de arquitetura. Ele demonstra a utilização de HTML, CSS e JavaScript para criar uma página web informativa e interativa.',
         },
         pesquisador_de_paises: {
           title: 'Pesquisador de Países',
           description:
             'App que permite pesquisar informações detalhadas sobre países utilizando a API REST Countries, com resultados rápidos e interface amigável.',
         },
-        landpage_dnc: {
-          title: 'LandPage DNC',
+        projectarq_dnc: {
+          title: 'Projeto Arquitetura DNC',
           description:
-            'Página web promocional para curso gratuito de Introdução à Tecnologia da DNC School, com design atraente e foco na conversão de visitantes.',
+            'O objetivo do projeto é criar uma aplicação web que exibe uma lista de projetos, permite salvar favoritos e utiliza um contexto global para gerenciar o idioma e textos dinâmicos.',
         },
-        climotex: {
-          title: 'ClimoTex',
+        desafio4: {
+          title: 'Portfólio React',
           description:
-            'Aplicativo de clima em tempo real desenvolvido com React.js, Next.js e Tailwind CSS, oferecendo previsões precisas e interface moderna e amigável.',
+            'Este projeto é um portfólio pessoal desenvolvido com React e TypeScript, utilizando o Vite como ferramenta de build. Ele apresenta uma estrutura moderna e organizada, com foco em boas práticas de desenvolvimento, internacionalização e uma interface responsiva e acessível.',
         },
         js_game: {
           title: 'JS Game',
@@ -96,47 +96,65 @@ const resources = {
           description:
             'Projeto de FAQ desenvolvido como desafio do Frontend Mentor, com design responsivo e interatividade para melhorar a experiência do usuário.',
         },
-        clone_yu_gi_oh: {
-          title: 'Clone Yu-gi-oh',
-          description:
-            'Clone simples do jogo Yu-Gi-Oh! que permite visualizar cartas de personagens com informações e atributos detalhados, com interface interativa.',
-        },
-        spotify_imersao: {
-          title: 'Spotify Imersão',
+        desafio3: {
+          title: 'ToDo List',
           description:
             'Interface de usuário inspirada no Spotify, permitindo pesquisar artistas e visualizar playlists com design moderno e funcionalidade intuitiva.',
         },
         autenticacao_google: {
           title: 'Autenticação Google',
           description:
-            'Demonstração de autenticação via conta Google em aplicação web, utilizando Firebase para backend, garantindo segurança e facilidade de login.',
+            'Este projeto é um Board de Tarefas simples, feito com HTML, CSS e JavaScript. Ele permite que você crie, conclua e exclua tarefas, além de salvar tudo no navegador para não perder suas tarefas ao fechar a página.',
         },
       },
       tech: {
         html: {
           name: 'HTML',
-          description: 'Linguagem de marcação para estruturar conteúdo na web',
           level: 'Avançado',
         },
         css: {
           name: 'CSS',
-          description: 'Folhas de estilo para estilização de páginas web',
           level: 'Avançado',
         },
         javascript_typescript: {
-          name: 'JavaScript/TypeScript',
-          description: 'Superset do JavaScript que adiciona tipagem estática',
-          level: 'Intermediário',
+          name: 'TypeScript',
+          level: 'Avançado',
         },
         react: {
           name: 'React',
-          description: 'Biblioteca JavaScript para construir interfaces',
           level: 'Intermediário',
         },
         nodejs: {
           name: 'Node.js',
-          description: 'Ambiente de execução JavaScript no servidor',
-          level: 'Basico',
+          level: 'Iniciante',
+        },
+        firebase: {
+          name: 'Firebase',
+          level: 'Intermediario',
+        },
+        git: {
+          name: 'Git',
+          level: 'Intermediario',
+        },
+        mongodb: {
+          name: 'mongoDB',
+          level: 'Iniciante',
+        },
+        figma: {
+          name: 'Figma',
+          level: 'intermediario',
+        },
+        next: {
+          name: 'Next.js',
+          level: 'Intermediario',
+        },
+        bootstrap: {
+          name: 'BootStrap',
+          level: 'Iniciante',
+        },
+        tailwindcss: {
+          name: 'Tailwind',
+          level: 'intermediario',
         },
       },
       button: {
@@ -155,12 +173,12 @@ const resources = {
       welcome: 'Welcome',
       about: 'About Me',
       projects: 'Projects',
-      languageChanging: 'Language changed successfully',
       technologies: 'Technologies',
       contact: 'Contact',
       know_more: 'Learn more',
       description: 'Description',
       level: 'Level',
+      languageChanging: 'Language changed successfully',
       toggle_dark_mode: 'Toggle dark mode',
       scroll_to_top: 'Scroll to top',
       projects_in_highlight: 'Featured Projects',
@@ -203,35 +221,35 @@ const resources = {
         },
       },
       project: {
-        contador_regressivo: {
-          title: 'Countdown Timer',
+        salesdashboard: {
+          title: 'Sales Dashboard',
           description:
-            'Web application that displays a dynamic countdown to a specific date, ideal for events and launches, with a responsive and intuitive interface.',
+            'The DNC Sales Dashboard is a web application developed in React with TypeScript, offering a comprehensive panel for managing and visualizing sales data. The application features authentication, protected routes, interactive charts, and API integration.',
         },
         controle_de_produtos: {
           title: 'Product Control',
           description:
             'Simple product manager that allows adding, viewing, and removing items, facilitating stock control with a friendly and simple interface.',
         },
-        lista_de_tarefas: {
-          title: 'Task List',
+        desafio1: {
+          title: 'Architecture Landing Page',
           description:
-            'Web application for efficient task management, allowing adding, completing, and removing activities with ease to organize your day.',
+            'This project presents a static website for an architecture company. It demonstrates the use of HTML, CSS, and JavaScript to create an informative and interactive web page.',
         },
         pesquisador_de_paises: {
           title: 'Country Researcher',
           description:
             'App that allows searching detailed information about countries using the REST Countries API, with fast results and a friendly interface.',
         },
-        landpage_dnc: {
-          title: 'DNC Landing Page',
+        projectarq_dnc: {
+          title: 'DNC Architecture Project',
           description:
-            'Promotional web page for a free introductory technology course by DNC School, with attractive design and focus on visitor conversion.',
+            'The project aims to create a web application that displays a list of projects, allows saving favorites, and uses a global context to manage language and dynamic texts.',
         },
-        climotex: {
-          title: 'ClimoTex',
+        desafio4: {
+          title: 'React Portfolio',
           description:
-            'Real-time weather application developed with React.js, Next.js and Tailwind CSS, offering accurate forecasts and a modern, friendly interface.',
+            'This project is a personal portfolio developed with React and TypeScript, using Vite as the build tool. It features a modern and organized structure, focusing on best development practices, internationalization, and a responsive and accessible interface.',
         },
         js_game: {
           title: 'JS Game',
@@ -243,47 +261,65 @@ const resources = {
           description:
             'FAQ project developed as a challenge from Frontend Mentor, with responsive design and interactivity to improve user experience.',
         },
-        clone_yu_gi_oh: {
-          title: 'Yu-Gi-Oh Clone',
-          description:
-            'Simple clone of the Yu-Gi-Oh! game that allows viewing character cards with detailed information and attributes, with an interactive interface.',
-        },
-        spotify_imersao: {
-          title: 'Spotify Immersion',
+        desafio3: {
+          title: 'ToDo List',
           description:
             'User interface inspired by Spotify, allowing searching artists and viewing playlists with modern design and intuitive functionality.',
         },
         autenticacao_google: {
           title: 'Google Authentication',
           description:
-            'Demonstration of authentication via Google account in a web application, using Firebase for backend, ensuring security and ease of login.',
+            'This project is a simple Task Board made with HTML, CSS, and JavaScript. It allows you to create, complete, and delete tasks, as well as save everything in the browser to not lose your tasks when closing the page.',
         },
       },
       tech: {
         html: {
           name: 'HTML',
-          description: 'Markup language to structure content on the web',
           level: 'Advanced',
         },
         css: {
           name: 'CSS',
-          description: 'Style sheets for styling web pages',
           level: 'Advanced',
         },
         javascript_typescript: {
-          name: 'JavaScript/TypeScript',
-          description: 'Superset of JavaScript that adds static typing',
+          name: 'TypeScript',
           level: 'Intermediate',
         },
         react: {
           name: 'React',
-          description: 'JavaScript library for building interfaces',
           level: 'Intermediate',
         },
         nodejs: {
           name: 'Node.js',
-          description: 'JavaScript runtime environment on the server',
-          level: 'Basic',
+          level: 'Beginner',
+        },
+        firebase: {
+          name: 'Firebase',
+          level: 'Intermediate',
+        },
+        git: {
+          name: 'Git',
+          level: 'Intermediate',
+        },
+        mongodb: {
+          name: 'mongoDB',
+          level: 'Beginner',
+        },
+        figma: {
+          name: 'Figma',
+          level: 'Intermediate',
+        },
+        next: {
+          name: 'Next.js',
+          level: 'Intermediate',
+        },
+        bootstrap: {
+          name: 'BootStrap',
+          level: 'Beginner',
+        },
+        tailwindcss: {
+          name: 'Tailwind',
+          level: 'Intermediate',
         },
       },
       button: {

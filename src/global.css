@@ -13,6 +13,23 @@ body,
     color 0.3s ease;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1976d2;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
 /* Tema claro (padrão) */
 :root {
   --background-color: #ffffff;
