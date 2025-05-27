@@ -13,7 +13,7 @@ describe('Tech Page', () => {
     )
     const techNames = [
       'React',
-      'JavaScript/TypeScript',
+      'TypeScript',
       'Node.js',
       'CSS',
       'HTML',

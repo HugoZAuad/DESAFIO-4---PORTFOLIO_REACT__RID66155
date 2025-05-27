@@ -6,40 +6,69 @@ import {
   faNodeJs,
   faCss3Alt,
   faHtml5,
+  faGitAlt,
+  faFigma,
+  faBootstrap,
+  faNeos,
 } from '@fortawesome/free-brands-svg-icons'
+import { faFireFlameCurved, faDatabase, faWind } from '@fortawesome/free-solid-svg-icons'
 import './tech.css'
 import { useTranslation } from 'react-i18next'
 
 const techs = [
   {
     name: 'tech.html.name',
-    description: 'tech.html.description',
     level: 'tech.html.level',
     icon: faHtml5,
   },
   {
     name: 'tech.css.name',
-    description: 'tech.css.description',
     level: 'tech.css.level',
     icon: faCss3Alt,
   },
   {
     name: 'tech.javascript_typescript.name',
-    description: 'tech.javascript_typescript.description',
     level: 'tech.javascript_typescript.level',
     icon: faJs,
   },
   {
     name: 'tech.react.name',
-    description: 'tech.react.description',
     level: 'tech.react.level',
     icon: faReact,
   },
   {
     name: 'tech.nodejs.name',
-    description: 'tech.nodejs.description',
     level: 'tech.nodejs.level',
     icon: faNodeJs,
+  },
+    {
+    name: 'tech.firebase.name',
+    level: 'tech.firebase.level',
+    icon: faFireFlameCurved,
+  },  {
+    name: 'tech.git.name',
+    level: 'tech.git.level',
+    icon: faGitAlt,
+  },  {
+    name: 'tech.mongodb.name',
+    level: 'tech.mongodb.level',
+    icon: faDatabase,
+  },  {
+    name: 'tech.figma.name',
+    level: 'tech.figma.level',
+    icon: faFigma,
+  },  {
+    name: 'tech.next.name',
+    level: 'tech.next.level',
+    icon: faNeos,
+  },  {
+    name: 'tech.bootstrap.name',
+    level: 'tech.bootstrap.level',
+    icon: faBootstrap,
+  },  {
+    name: 'tech.tailwindcss.name',
+    level: 'tech.tailwindcss.level',
+    icon: faWind,
   },
 ]
 
@@ -55,7 +84,6 @@ const Tech: React.FC = () => {
             <span className="tech-icon">
               <ButtonTech
                 name={tech.name}
-                description={tech.description}
                 level={tech.level}
                 icon={tech.icon}
               />
