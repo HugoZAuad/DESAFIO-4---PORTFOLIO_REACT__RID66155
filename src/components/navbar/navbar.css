@@ -85,13 +85,21 @@ a {
     margin-left: auto;
   }
 
-  .buttons-utils {
-    order: 1;
+  .buttons-lang {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 10rem;
+    margin-top: 1rem;
+    padding-left: 4rem;
+  }
+
+  .buttons-theme{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    bottom: 2rem;
   }
 }
 
