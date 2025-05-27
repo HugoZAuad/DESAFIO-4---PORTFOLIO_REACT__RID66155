@@ -93,11 +93,11 @@ a {
     padding-left: 4rem;
   }
 
-  .buttons-theme{
+  .buttons-theme {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+
     position: relative;
     bottom: 2rem;
   }

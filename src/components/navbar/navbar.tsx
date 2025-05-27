@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
       <div className="buttons-lang">
         <LanguageToggleButton />
       </div>
-      <div className='buttons-theme'>
+      <div className="buttons-theme">
         <ButtonTheme />
       </div>
     </nav>
