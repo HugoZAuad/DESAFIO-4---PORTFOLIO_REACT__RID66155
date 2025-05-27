@@ -11,7 +11,11 @@ import {
   faBootstrap,
   faNeos,
 } from '@fortawesome/free-brands-svg-icons'
-import { faFireFlameCurved, faDatabase, faWind } from '@fortawesome/free-solid-svg-icons'
+import {
+  faFireFlameCurved,
+  faDatabase,
+  faWind,
+} from '@fortawesome/free-solid-svg-icons'
 import './tech.css'
 import { useTranslation } from 'react-i18next'
 
@@ -41,31 +45,37 @@ const techs = [
     level: 'tech.nodejs.level',
     icon: faNodeJs,
   },
-    {
+  {
     name: 'tech.firebase.name',
     level: 'tech.firebase.level',
     icon: faFireFlameCurved,
-  },  {
+  },
+  {
     name: 'tech.git.name',
     level: 'tech.git.level',
     icon: faGitAlt,
-  },  {
+  },
+  {
     name: 'tech.mongodb.name',
     level: 'tech.mongodb.level',
     icon: faDatabase,
-  },  {
+  },
+  {
     name: 'tech.figma.name',
     level: 'tech.figma.level',
     icon: faFigma,
-  },  {
+  },
+  {
     name: 'tech.next.name',
     level: 'tech.next.level',
     icon: faNeos,
-  },  {
+  },
+  {
     name: 'tech.bootstrap.name',
     level: 'tech.bootstrap.level',
     icon: faBootstrap,
-  },  {
+  },
+  {
     name: 'tech.tailwindcss.name',
     level: 'tech.tailwindcss.level',
     icon: faWind,

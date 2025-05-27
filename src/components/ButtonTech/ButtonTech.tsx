@@ -9,11 +9,7 @@ interface ButtonTechProps {
   icon?: any
 }
 
-const ButtonTech: React.FC<ButtonTechProps> = ({
-  name,
-  level,
-  icon,
-}) => {
+const ButtonTech: React.FC<ButtonTechProps> = ({ name, level, icon }) => {
   const { t } = useTranslation()
   const [cardInfo, setCardInfo] = useState({
     name: '',
@@ -30,7 +26,7 @@ const ButtonTech: React.FC<ButtonTechProps> = ({
 
   return (
     <div className={`button-tech-card ${fadeIn ? 'fade-in' : ''}`}>
-      {icon && <FontAwesomeIcon icon={icon}  className="card-icon" />}
+      {icon && <FontAwesomeIcon icon={icon} className="card-icon" />}
       <h3 className="card-name">{t(cardInfo.name)}</h3>
       <p className="card-level">
         <strong>{t('level')}:</strong> {t(cardInfo.level)}
